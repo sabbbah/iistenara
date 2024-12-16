@@ -8,11 +8,13 @@
   --tcMainColor: #1ab0cb;
   --tcBlueLevel: #19a0e3;
   --tcDarkLavender: #7378ec;
-  --tcLightTealColor: #46d5d4;
-  --tcLightTealHover: #3fc6c6;
+  --tcLightTealColor: #1ab0cb;
+  /* --tcLightTealColor: #46d5d4; */
+  /* --tcLightTealHover: #3fc6c6; */
+  --tcLightTealHover: #17a1ba;
 
-  --tcMainColorHov: #04c9ba;
-  --tcMainColorFad: #04c9ba2e;
+  /* --tcMainColorHov: #04c9ba; */
+  /* --tcMainColorFad: #04c9ba2e; */
 
   --tcOverlayBg: #0000002d;
   --tcWhiteColor: #ffffff;
@@ -291,7 +293,7 @@ body {
   }
 
   .hero::before {
-    background-image: linear-gradient(20deg, #46d5d4, #83d6d7);
+    background-image: linear-gradient(20deg, #00eaff, #83ceeb);
     background-repeat: no-repeat;
     content: "";
     display: block;
