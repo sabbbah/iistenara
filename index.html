@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الإستنارة للخدمات التعليمية</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="app/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- ================ -->
+  <!-- ==== NAVBAR ==== -->
+  <!-- ================ -->
+
+  <nav class="navbar">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-4">
+      <div class="right flex items-center">
+        <button class="me-2 block md:hidden">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <a href="#" class="hidden items-center space-x-3 rtl:space-x-reverse">
+          <img src="app/images/logo/eestenara.png" class="h-9" alt="Flowbite Logo" />
+        </a>
+
+        <button data-collapse-toggle="navbar-multi-level" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar-multi-level" aria-expanded="false"></button>
+
+        <div class="hidden w-full md:block ms-3 md:w-auto" id="navbar-multi-level">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a href="#" class="block py-2 px-3 rounded md:p-0" aria-current="page">الرئيسية</a>
+            </li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 md:p-0 md:w-auto">
+                الخدمات
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-700 divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 hover:">Dashboard</a>
+                  </li>
+                  <li aria-labelledby="dropdownNavbarLink">
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                      data-dropdown-placement="right-start" type="button"
+                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 hover:">
+                      Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m1 1 4 4 4-4" />
+                      </svg>
+                    </button>
+                    <div id="doubleDropdown"
+                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="doubleDropdownButton">
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:">Overview</a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:">My
+                            downloads</a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:">Billing</a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:">Rewards</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 hover:">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:bg-gray-600 text-gray-200 hover:">Sign
+                    out</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 md:p-0">الخدمات</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 md:p-0">الخطط</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 md:p-0">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="left">
+        <button class="btn btn-primary font-medium px-4 py-1 rounded-full">
+          تواصل معنا
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ================ -->
+  <!-- ===== HERO ===== -->
+  <!-- ================ -->
+
+  <div class="hero select-none">
+    <div class="flex flex-col max-w-screen-xl h-full items-center justify-between mx-auto py-2 px-4">
+      <div class="titles md:text-center mt-32 mb-20 flex items-center flex-col justify-center">
+        <h1 class="text-7xl md:text-8xl mb-1 title">
+          <div class="flex items-center">
+            <div class="highlight">الإستنارة</div>
+            <!-- <img src="app/images/shapes/shape1.png" alt=""> -->
+            <svg class="shape" width="60px" height="60px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 26.6875 12.6602 C 26.9687 12.6602 27.1094 12.4961 27.1797 12.2383 C 27.9062 8.3242 27.8594 8.2305 31.9375 7.4570 C 32.2187 7.4102 32.3828 7.2461 32.3828 6.9648 C 32.3828 6.6836 32.2187 6.5195 31.9375 6.4726 C 27.8828 5.6524 28.0000 5.5586 27.1797 1.6914 C 27.1094 1.4336 26.9687 1.2695 26.6875 1.2695 C 26.4062 1.2695 26.2656 1.4336 26.1953 1.6914 C 25.3750 5.5586 25.5156 5.6524 21.4375 6.4726 C 21.1797 6.5195 20.9922 6.6836 20.9922 6.9648 C 20.9922 7.2461 21.1797 7.4102 21.4375 7.4570 C 25.5156 8.2774 25.4687 8.3242 26.1953 12.2383 C 26.2656 12.4961 26.4062 12.6602 26.6875 12.6602 Z M 15.3438 28.7852 C 15.7891 28.7852 16.0938 28.5039 16.1406 28.0821 C 16.9844 21.8242 17.1953 21.8242 23.6641 20.5821 C 24.0860 20.5117 24.3906 20.2305 24.3906 19.7852 C 24.3906 19.3633 24.0860 19.0586 23.6641 18.9883 C 17.1953 18.0977 16.9609 17.8867 16.1406 11.5117 C 16.0938 11.0899 15.7891 10.7852 15.3438 10.7852 C 14.9219 10.7852 14.6172 11.0899 14.5703 11.5352 C 13.7969 17.8164 13.4687 17.7930 7.0469 18.9883 C 6.6250 19.0821 6.3203 19.3633 6.3203 19.7852 C 6.3203 20.2539 6.6250 20.5117 7.1406 20.5821 C 13.5156 21.6133 13.7969 21.7774 14.5703 28.0352 C 14.6172 28.5039 14.9219 28.7852 15.3438 28.7852 Z M 31.2344 54.7305 C 31.8438 54.7305 32.2891 54.2852 32.4062 53.6524 C 34.0703 40.8086 35.8750 38.8633 48.5781 37.4570 C 49.2344 37.3867 49.6797 36.8945 49.6797 36.2852 C 49.6797 35.6758 49.2344 35.2070 48.5781 35.1133 C 35.8750 33.7070 34.0703 31.7617 32.4062 18.9180 C 32.2891 18.2852 31.8438 17.8633 31.2344 17.8633 C 30.6250 17.8633 30.1797 18.2852 30.0860 18.9180 C 28.4219 31.7617 26.5938 33.7070 13.9140 35.1133 C 13.2344 35.2070 12.7891 35.6758 12.7891 36.2852 C 12.7891 36.8945 13.2344 37.3867 13.9140 37.4570 C 26.5703 39.1211 28.3281 40.8321 30.0860 53.6524 C 30.1797 54.2852 30.6250 54.7305 31.2344 54.7305 Z" />
+            </svg>
+          </div>
+          للخدمات العلمية والتأهيل
+        </h1>
+        <div class="bottom mt-2">
+          <p class="description text-lg font-medium mb-3">
+            يسرنا و يسعدنا ان نقدم لكم الدعم والمساندة في انجاز مشروعاتكم
+            البحثية واوراقكم العلمية باشراف و متابعة عدد من العلماء المختصين
+            بكل المجالات النظرية والتطبيقية ونقدم لكم كافة الخدمات لانجاز
+            مشاريع الابحاث العلمية
+          </p>
+
+          <button class="contact_us flex items-center md:m-auto px-8 py-2 mt-3 rounded-full text-lg font-medium">
+            <i data-lucide="send" class="me-2"></i>
+            <span>تواصل معنا الآن</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="services mb-16">
+        <div class="all">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="box p-4 rounded-xl text-center cursor-pointer">
+              <div class="top mb-5">
+                <div class="icon m-auto w-fit">
+                  <i class="w-16 h-16 mainColor" data-lucide="notebook-pen"></i>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="title">
+                  <h5 class="font-bold text-2xl mb-2">كتابة البحوث</h5>
+                  <p class="font-medium text-xl description">
+                    كتابة وترجمة الأبحاث والرسائل العلمية لجميع التخصصات في
+                    الوقت المحدد
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box p-4 rounded-xl text-center cursor-pointer">
+              <div class="top mb-5">
+                <div class="icon m-auto w-fit">
+                  <i class="w-16 h-16 mainColor" data-lucide="file-chart-pie"></i>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="title">
+                  <h5 class="font-bold text-2xl mb-2">التحاليل</h5>
+                  <p class="font-medium text-xl description">
+                    كتابة وترجمة الأبحاث والرسائل العلمية لجميع التخصصات في
+                    الوقت المحدد
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box p-4 rounded-xl text-center cursor-pointer">
+              <div class="top mb-5">
+                <div class="icon m-auto w-fit">
+                  <i class="w-16 h-16 mainColor" data-lucide="hand-platter"></i>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="title">
+                  <h5 class="font-bold text-2xl mb-2">خدمات آخرى</h5>
+                  <p class="font-medium text-xl description">
+                    كتابة وترجمة الأبحاث والرسائل العلمية لجميع التخصصات في
+                    الوقت المحدد
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="all_services" id="services">
+    <div class="flex flex-col max-w-screen-xl h-full items-center justify-between mx-auto py-2 px-4">
+      <div class="section_title text-center select-none">
+        <h4 class="font-bold text-xl title">خدمات الإستنارة</h4>
+        <p class="section_description text-lg mt-3">
+          جانب من الخدمات التي نقدمها لكم في مجال التعليم
+        </p>
+      </div>
+
+      <!-- categories -->
+      <div class="categories mm-auto flex w-full flex-col my-5">
+        <div class="categories_list flex list-none md:justify-center items-center select-none mb-8">
+          <li class="px-4 py-1 mx-1 active">جميع الخدمات</li>
+          <li class="px-4 py-1 mx-1">البحث العلمي</li>
+          <li class="px-4 py-1 mx-1">التحليل والتدقيق</li>
+          <li class="px-4 py-1 mx-1">الدعم الإضافي</li>
+        </div>
+
+        <!-- ALL CATEGORIES -->
+        <div class="all_categories w-full">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 select-none text-white">
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="chart-no-axes-combined" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">تحليل البيانات</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="chart-pie" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">
+                التحليل الإحصائي
+              </h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="notebook-pen" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">إعداد البحوث</h5>
+            </div>
+
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="circle-fading-arrow-up" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">بحوث الترقية</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="clipboard-type" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">تنسيق البحوث</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="clipboard-type" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">عمل عرض البوربوينت</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="swatch-book" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">رسالة الماجستير</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="land-plot" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">خطة البحث</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="languages" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">التدقيق اللغوي</h5>
+            </div>
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="graduation-cap" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">اطروحة الدكتوراه</h5>
+            </div>
+
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="earth" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">الترجمة إلى الإنجليزي</h5>
+            </div>
+
+
+            <div class="category rounded-lg px-4 py-8 cursor-pointer text-center flex flex-col items-center">
+              <div class="icon">
+                <i data-lucide="book-open-check" class=""></i>
+              </div>
+              <h5 class="title text-lg font-semibold mt-2">بحوث التخرج للبكلاريوس</h5>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app/js/lucide.min.js"></script>
+  <script src="app/js/scripts.js"></script>
+</body>
+
+</html>
